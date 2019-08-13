@@ -14,8 +14,9 @@ const babelOptions = require('./scripts/getBabelOptions')({
   ast: false,
   moduleMap: {
     '@babel/core': '@babel/core',
+    "core-js/stable": "core-js/stable",
+    "regenerator-runtime/runtime":"regenerator-runtime/runtime",
     '@babel/parser': '@babel/parser',
-    '@babel/polyfill': '@babel/polyfill',
     '@babel/traverse': '@babel/traverse',
     '@babel/types': '@babel/types',
     '@babel/plugin-proposal-nullish-coalescing-operator':

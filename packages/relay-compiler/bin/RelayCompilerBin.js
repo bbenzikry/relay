@@ -10,7 +10,10 @@
 
 'use strict';
 
-require('@babel/polyfill');
+// eslint-disable-next-line no-eval
+require('core-js/stable');
+// eslint-disable-next-line no-eval
+require('regenerator-runtime/runtime');
 
 const {main} = require('./RelayCompilerMain');
 const yargs = require('yargs');
